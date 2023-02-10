@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Work+Sans:wght@400;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color-: #e74c3c;
+}
+
+body {
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/images/banner1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: whitesmoke;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+#logo {
+    font-size: 2.5em;
+}
+
+#logo span {
+    color: var(--main-color-);
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.menu a:first-child {
+    color: var(--main-color-);
+}
+
+.menu a:hover {
+    color: var(--main-color-);
+}
+
+.icon i {
+    font-size: 20px;
+}
+
+.icon i:hover {
+    color: var(--main-color-);
+}
+
+.icon a {
+    text-decoration: none;
+    background: var(--main-color-);
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+/* header end here  */
+.h-text {
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#camare {
+    font-size: 50px;
+    /* padding: 20px; */
+    margin-bottom: 10px;
+}
+
+.h-text h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.h-text input {
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.h-text button {
+    width: 30%;
+    padding: 20px;
+    background: var(--main-color-);
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+/* content end here  */
+
+.filter-gallery {
+    padding: 100px;
+}
+
+.portfolio-menu {
+    text-align: center;
+
+    padding: 10px 20px;
+}
+
+.portfolio-menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.portfolio-menu li:hover {
+    background: var(--main-color-);
+    color: white;
+    border-radius: 8px;
+}
+
+li.active {
+    background: var(--main-color-);
+    color: white;
+    border-radius: 8px;
+}
+
+/* images section start here  */
+
+.portfolio-item {
+    width: 100%;
+}
+
+.portfolio-item .item {
+    width: 360px;
+    margin: 8px;
+    height: 360px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-item .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* information start here   */
+
+
+.member {
+    width: 100%;
+    padding: 10px 100px;
+}
+
+.member-info {
+    text-align: center;
+}
+
+.member-info h1 {
+    font-size: 2.5em;
+}
+
+.member-info p {
+    margin-top: 10px;
+}
+
+.member-info h1 span {
+    color: var(--main-color-);
+}
+
+.member-card {
+    width: 50%;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.member-card p {
+    margin: 20px 0;
+    line-height: 2em;
+}
+
+.member-card h2 {
+    margin: 20px;
+}
+
+.m-images {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.m-images img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.m-images img:hover {
+    transform: scale(1.5);
+    transition: 0.5 linear;
+}
+
+
+/* footer start here  */
+footer {
+    width: 100%;
+    background: #262626;
+    padding: 50px 100px;
+}
+
+.newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.newsletter>div {
+    flex-basis: 50%;
+}
+
+.ntext {
+    text-align: right;
+}
+
+.newsletter h2 {
+    font-size: 2em;
+}
+
+.newsletter p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.newsletter label {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.newsletter input {
+    padding: 20px;
+    width: 65%;
+    border-radius: 8px;
+
+    border: none;
+    outline: none;
+}
+
+.newsletter button {
+    width: 35%;
+    color: white;
+    background: var(--main-color-);
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.f-contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    margin-top: 3em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.f-contact>div {
+    flex-basis: 25%;
+}
+
+.f-contact p {
+    line-height: 2em;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.f-contact p:hover {
+    color: white;
+}
+
+.f-contact i {
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: 0.4s ease;
+}
+
+.f-contact i:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
